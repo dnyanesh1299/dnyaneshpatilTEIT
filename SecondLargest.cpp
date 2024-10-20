@@ -1,8 +1,6 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int secondLargest(const vector<int>& arr) {
+class solution{
+public:
+  int secondLargest(const vector<int>& arr) {
     if (arr.size() < 2)  // Array needs atleast 2 elements
         return -1;
 
@@ -23,12 +21,4 @@ int secondLargest(const vector<int>& arr) {
     return second_largest;
 
 }
-
-int main() {
-    // Test cases
-    cout << secondLargest({12, 35, 1, 10, 34, 1}) << endl;  // Expected: 34
-    cout << secondLargest({10, 10}) << endl;  // Expected: -1
-    cout << secondLargest({5}) << endl;  // Expected: -1
-    cout << secondLargest({4, 4, 4, 4}) << endl;  // Expected: -1
-    return 0;
-}
+};
